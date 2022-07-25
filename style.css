@@ -1,0 +1,98 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(michael-diane-weidner-u8X0HCV2X1Y-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+}
+footer{
+    font-size: 100px;
+    color: aliceblue;
+}
+.about{
+    margin: 9px;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+span{
+    padding-left: 50px;
+    font-size: 100px;
+    display: flex;
+}
+.icon{
+    display: flex;
+    padding-left: 45px;
+}
+main{
+    width: 650px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.bout{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 490px;
+}
+.bout div{
+    display: flex;
+    justify-content: space-between;
+}
+.bout div span{
+    padding: 25px;
+    display: flex;
+    color: rgba(255,255,255,0.5);
+    font-size: 1em;
+}
+.bout div .white{
+    color: #fffb;
+}
+.second{
+    padding: 20px 40px;
+}
+main input{
+    color: rgba(255,255,255,0.5);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1.3em;
+}
+input::placeholder{
+    color: rgba(255,255,255,0.2);
+}
+.second{
+    height: 100%;
+    backdrop-filter: blur(50px);
+}
+@media(max-width: 700px) {
+    body{
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        height: 50vh;
+        width: 100%;
+    }
+    footer{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bout{
+        margin: 0;
+    }
+}
