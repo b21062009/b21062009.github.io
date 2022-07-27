@@ -2,97 +2,92 @@
     padding:0 ;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 3px;
 }
-body{
-    background-image: url(michael-diane-weidner-u8X0HCV2X1Y-unsplash.jpg);
+.containear{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./bg.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-
-}
-footer{
-    font-size: 100px;
-    color: aliceblue;
-}
-.about{
-    margin: 9px;
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-}
-span{
-    padding-left: 50px;
-    font-size: 100px;
     display: flex;
 }
-.icon{
-    display: flex;
-    padding-left: 45px;
-}
-main{
-    width: 650px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-.bout{
-    font-size: 20px;
-    font-family: sans-serif;
-    margin-top: 490px;
-}
-.bout div{
-    display: flex;
-    justify-content: space-between;
-}
-.bout div span{
-    padding: 25px;
-    display: flex;
-    color: rgba(255,255,255,0.5);
-    font-size: 1em;
-}
-.bout div .white{
-    color: #fffb;
-}
-.second{
-    padding: 20px 40px;
-}
-main input{
-    color: rgba(255,255,255,0.5);
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid rgba(255,255,255,0.5);
-    width: 100%;
-    padding: 5px 10px;
-    font-size: 1.3em;
-}
-input::placeholder{
-    color: rgba(255,255,255,0.2);
-}
-.second{
+.weather{
+    width: 60%;
     height: 100%;
-    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 50px;
 }
-@media(max-width: 700px) {
-    body{
+.weather__text{
+    font-size: 100px;
+    color: white;
+}
+.info{
+    width: 40%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    backdrop-filter: blur(20px);
+}
+.info__text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info__text div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 28px;
+    color: white;
+}
+.info__text div span {
+    color: #fff8;
+}
+.info__text div .white{
+    color: white;
+    opacity: 0.8;
+}
+.info input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff8;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.info input::placeholder{
+    color: #fff8;
+}
+@media (max-width: 700px) {
+    .containear{
         flex-direction: column;
-        align-items: center;
     }
-    main{
-        height: 50vh;
+    .weather{
         width: 100%;
+        height: 60%;
     }
-    footer{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .weather__text{
+        font-size: 60px;
     }
-    .bout{
-        margin: 0;
+    .info__text div{
+        font-size: 18px;
+    }
+    .info{
+        width: 100%;
+        height: 40%;
+    }
+    .info input{
+        font-size: 16px;
     }
 }

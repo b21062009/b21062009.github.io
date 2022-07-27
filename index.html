@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css"> 
+    <script defer src="app.js"></script>
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <body>
-    <footer>
-        <div class="about">
-        <div class="icon"><span id="temp"></span></div><span id="city">Loading...</span>
-            
-        </div> 
-    </footer>
-    <main>
-        <div class="second">
-            <input id="search" type="search" placeholder="search..." >
-            <div class="bout">
+    <div class="containear">
+        <div class="weather">
+            <div class="weather__text">
+                <div class="temp" id="temp"></div>
+                <div class="city" id="city"> Loading... </div>
+            </div>
+        </div>
+        <div class="info">
+            <input type="search" placeholder="search..." id="search">
+            <div class="info__text">
                 <div> <span>Cloudy</span> <span class="white" id="cloudy">12%</span> </div>
                 <div> <span>Humidity</span> <span class="white"id="humidity" >78%</span> </div>
                 <div> <span>Wind</span> <span class="white" id="wind">1km/h</span> </div>
             </div>
         </div>
-    </main>
-    <script src="app.js"></script>
+    </div>
 </body>
 </html>
